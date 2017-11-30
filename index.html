@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="component/jquery/dist/css/jquery.fullPage.css"/>
+		<link rel="stylesheet" type="text/css" href="component/bootstrap/dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="scss/style.css"/>
+	</head>
+	<body>
+		<div class="head">
+			头部
+		</div>
+		<div id="XinRong">
+			<div class="section banner" data-anchor="page1">
+				<div class="slide">banner1</div>
+				<div class="slide">banner2</div>
+				<div class="slide">banner3</div>
+				<div class="slide">banner4</div>
+				<div class="banner_bottom">
+					
+				</div>
+			</div>
+			<div class="section product" data-anchor="page2">
+				我们的产品
+			</div>
+			<div class="section scheme" data-anchor="page3">
+				我们的解决方案
+			</div>
+			<div class="section case" data-anchor="page4">
+				我们的案例
+			</div>
+			<div class="section AboutUs" data-anchor="page5">
+				关于我们
+			</div>
+			<div class="section KnowAboutUs" data-anchor="page6">
+				了解我们
+			</div>
+		</div>
+		<div class="section_list">
+			<ul id="menu">
+				<li class="section_listActive page1"><a href="#page1"  class="section_listActive"></a></li>
+				<li class="page2"><a href="#page2"></a></li>
+				<li class="page3"><a href="#page3"></a></li>
+				<li class="page4"><a href="#page4"></a></li>
+				<li class="page5"><a href="#page5"></a></li>
+				<li class="page6"><a href="#page6"></a></li>
+			</ul>
+		</div>
+	</body>
+	<script src="component/jquery/dist/js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="component/jquery/dist/js/jquery.fullPage.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+
+		$(function(){
+			$('#XinRong').fullpage({
+				sectionsColor: ['rgba(27, 188, 155,0.5)', '#4BBFC3', '#7BAABE', '#f90','#1bbc9b', '#4BBFC3'],
+				continuousVertical: false,
+				anchors: ['page1', 'page2', 'page3', 'page4',"page5",,"page6"],
+				menu: '#menu',
+				afterLoad:function(anchorLink, index){
+					console.log(index-1)
+					$(".section_list>ul>li").eq(index-1).find("a").addClass("section_listActive").parents("li").siblings().find("a").removeClass("section_listActive")
+				}
+			});
+
+		});
+
+	</script>
+</html>

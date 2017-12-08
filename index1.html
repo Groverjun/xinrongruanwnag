@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="component/jquery/dist/css/jquery.fullPage.css"/>
+		<link rel="stylesheet" type="text/css" href="scss/style.css"/>
+		<style type="text/css">
+			.fp-tableCell{
+				position: relative;
+			}
+			.banner_txt{
+				position: absolute;
+				width: 898px;
+				height: 274px;
+				margin: auto;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+			}
+			@media (max-width: 1024px) {
+				.head {
+					width: 1024px;
+					margin: auto;
+				}
+				.head>.head_nav .head_logo {
+					margin: 0;
+				}
+				.head>.head_nav .head_list>li {
+					margin-right: 20px;
+				}
+				.banner_bottom .banner_box {
+					width: 1024px;
+				}
+				.banner_bottom .banner_box>.banner_Blist {
+					width: 256px;
+					padding: 0 10px;
+				}
+				.banner_bottom .banner_box .banner_Blist:nth-child(2) {
+					border: none;
+					padding: 0 10px;
+				}
+			}
+			
+			@media (max-width: 800px) {
+				.head {
+					width: 800px;
+				}
+				.head>.head_nav .head_logo {
+					margin: 0;
+				}
+				.head>.head_nav .head_list>li {
+					margin-right: 5px;
+				}
+				.head>.head_nav .head_listR>li {
+					width: 80px;
+				}
+				.head>.head_nav .head_listR>li>a {
+					width: 80px;
+				}
+				.head>.head_nav .head_listR>li:nth-child(2) {
+					width: 100px;
+					font-size: 14px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="head">
+			<nav class="head_nav clearfix">
+				<div class="head_logo"><img src="img/head/logo_03.png"/></div>
+				<ul class="head_list clearfix">
+					<li class="current_page_item"><a href="index.html">首页</a></li>
+					<li>
+						<a href="#">产品<i></i></a>
+						<div class="head_listChild">
+							<dl>
+								
+								<dt>官网建设 </dt>
+								<dd><a href="pages/marketing.html" target="_blank">营销官网</a></a><i></i></dd>
+								<dd><a href="#">手机官网</a><i></i></dd>
+								<dd><a href="#">全渠道客服系统</a></dd>
+								<dd><a href="#">微信公众号</a></dd>
+								<dd><a href="#">微信小程序</a><i></i></dd>
+							</dl>
+							<dl>
+								<dt>营销推广 </dt>
+								<dd><a href="#">SEO</dd>
+								<dd><a href="#">SEM</a><i></i></dd>
+								<dd><a href="#">朋友圈推广</a></dd>
+								<dd><a href="#">精准人群推广</a></dd>
+								<dd><a href="#">短信推广</a></dd>
+							</dl>
+							<dl>
+								<dt>品牌推广 </dt>
+								<dd><a href="pages/cctv.html" target="_blank">CCTV品牌推广</a><i></i></dd>
+								<dd><a href="pages/aaapinpai.html" target="_blank">AAA信用等级认证</a></dd>
+								<dd><a href="#">中国推广联盟</a></dd>
+							</dl>
+							<dl>
+								<dt>增值服务 </dt>
+								<dd><a href="#">商标注册</a></dd>
+								<dd><a href="#">高新技术企业认证</a><i></i></dd>
+								<dd><a href="#">代理记账</a></dd>
+							</dl>
+						</div>
+					</li>
+					<li>
+						<a href="#page4">案例</a>
+
+					</li>
+					<li>
+						<a href="#page3" >方案</a>
+
+					</li>
+					<li>
+						<a href="#page5">新闻</a>
+
+					</li>
+					<li><a href="#page6">我们</a></li>
+
+				</ul>
+				<ol class="head_listR clearfix">
+					<li><a href="http://syb.wayboo.com" target="_blank">登录生意帮</a></li>
+					<li>40000-99990</li>
+				</ol>
+			</nav>
+		</div>
+		<div id="XinRong">
+			<div class="section banner" data-anchor="page1">
+				<div class="slide">
+					<img src="img/section1/banner1.jpg" width="100%" height="100%"/>
+					<p class="banner_txt"><img src="img/section1/banner_txt.png" width="100%"/></p>
+				</div>
+				<div class="slide">
+					<img src="img/section1/banner1.jpg" width="100%" height="100%"/>
+					<p class="banner_txt"><img src="img/section1/banner_txt.png" width="100%"/></p>
+				</div>
+				<div class="slide">
+					<img src="img/section1/banner1.jpg" width="100%" height="100%"/>
+					<p class="banner_txt"><img src="img/section1/banner_txt.png" width="100%"/></p>
+				</div>
+				<div class="slide">
+					<img src="img/section1/banner1.jpg" width="100%" height="100%"/>
+					<p class="banner_txt"><img src="img/section1/banner_txt.png" width="100%"/></p>
+				</div>
+				<div class="banner_bottom">
+					<div class="banner_box clearfix">
+						<div class="banner_Blist">
+							<img src="img/section1/section1_01.png"/>
+							<div class="banner_Btxt">
+								<h1>信融科技</h1>
+								<p>客户满意度100%</p>
+							</div>
+						</div>
+						<div class="banner_Blist">
+							<img src="img/section1/section1_02.png"/>
+							<div class="banner_Btxt">
+								<h1>信融科技</h1>
+								<p>服务过的行客户10万+</p>
+							</div>
+						</div>
+						<div class="banner_Blist">
+							<img src="img/section1/section1_03.png"/>
+							<div class="banner_Btxt">
+								<h1>信融科技</h1>
+								<p>服务过的行业8000+</p>
+							</div>
+						</div>
+						<div class="banner_Blist">
+							<img src="img/section1/section1_04.png"/>
+							<div class="banner_Btxt">
+								<h1>信融科技</h1>
+								<p>成功服务案例6000+</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section product" data-anchor="page2">
+				<h2>WHAT CAN WE DO</h2>
+				<h6 class="clearfix"><i>-</i>我们能为你提供<i>-</i></h6>
+				<div class="product_list clearfix">
+					<div class="txt txt_1" id=".box_M1">
+						<div><img src="img/section2/images/section_list01.png"/><span></span></div>
+					</div>
+					<div class="txt txt_2" id=".box_M2">
+						<div><img src="img/section2/images/section_list02.png"/><span></span></div>
+					</div>
+					<div class="txt txt_3" id=".box_M3">
+						<div><img src="img/section2/images/section_list03.png"/><span></span></div>
+					</div>
+					<div class="txt txt_4" id=".box_M4">
+						<div><img src="img/section2/images/section_list04.png"/><span></span></div>				
+					</div>
+					<div class="box_M">
+						<div class="box_Main">
+							<div class="box_M4">
+								<h1>用户</h1>
+								<ul>									
+									<li>SCRM  </li>
+									<li>SCRM  </li>
+									<li>免费电话</li>
+									<li>自营销工具</li>
+									<li>智能化设计工具</li>									
+									<li>......</li>
+								</ul>
+							</div>	
+							
+							<div class="box_M3">
+								
+								<h1>忠诚客户</h1>
+								<ul>									
+									<li>SCRM</li>
+									<li>SRA</li>									
+									<li>......</li>
+								</ul>
+							</div>
+		
+							<div class="box_M2">
+								<h1>访客</h1>
+								<ul>									
+									<li>营销官网</li>
+									<li>手机官网</li>
+									<li>落地页</li>
+									<li>在线客服系统H5</li>
+									<li>微信小程序</li>
+									<li>微商宝</li>
+									<li>......</li>
+								</ul>
+							</div>
+							
+							<div class="box_M1">
+								<h1>陌生人</h1>
+								<ul>									
+									<li>SEO优化</li>
+									<li>SEM竞价</li>
+									<li>DSP（精准人群）</li>
+									<li>朋友圈推广</li>
+									<li>B2B广告联盟</li>
+									<li>软文推广</li>
+									<li>......</li>
+								</ul>
+							</div>
+							<span class="top"></span>	
+							<span class="right"></span>	
+							<span class="bottom"></span>	
+							<span class="left"></span>	
+					</div>			
+				</div>
+				</div>
+			</div>
+			<div class="section scheme" data-anchor="page3">
+				<h2>WE CAN SOLUTION FOR YOU</h2>
+				<h6 class="clearfix"><i>-</i>我们为您提供解决方案<i>-</i></h6>
+				<div class="schemeBox clearfix">
+					<div class="schemeBox_list">
+						<div class="schemeBox_listT">
+							<p>企业</p>
+							<dl>
+								<dt>企业网站建设<i></i></dt>
+								<dd><a href="#">手机官网</a><i></i></dd>
+								<dd><a href="#">全渠道客服系统</a></dd>
+								<dd><a href="#">微信公众号</a></dd>
+								<dd><a href="#">微信小程序</a><i></i></dd>
+							</dl>
+						</div>
+						<div class="schemeBox_listB">
+							<h2>企业网站建设</h2>
+							<p>01 <i></i></p>
+						</div>
+						<div class="schemeBox_listBorder"></div>	
+					</div>
+					<div class="schemeBox_list">
+						<div class="schemeBox_listT">
+							<p>微信</p>
+							<dl>
+								<dt>微信营销方案<i></i></dt>
+								<dd><a href="#">朋友圈推广</a><i></i></dd>
+								<dd><a href="#">精准人群推广</a></dd>
+								<dd><a href="#">......</a></dd>
+							</dl>
+						</div>
+						<div class="schemeBox_listB">
+							<h2>微信营销方案</h2>
+							<p>02 <i></i></p>
+						</div>
+						<div class="schemeBox_listBorder"></div>	
+					</div>
+					<div class="schemeBox_list">
+						<div class="schemeBox_listT">
+							<p>引擎</p>
+							<dl>
+								<dt>搜索引擎营销方案<i></i></dt>
+								<dd><a href="#">搜索引擎优化</a><i></i></dd>
+								<dd><a href="#">搜索引擎推广</a></dd>
+								<dd><a href="#">......</a></dd>
+							</dl>
+						</div>
+						<div class="schemeBox_listB">
+							<h2>搜索引擎营销方案</h2>
+							<p>03 <i></i></p>
+						</div>
+						<div class="schemeBox_listBorder"></div>	
+					</div>
+					<div class="schemeBox_list">
+						<div class="schemeBox_listT">
+							<p>品牌</p>
+							<dl>
+								<dt>品牌服务推广方案<i></i></dt>
+								<dd><a href="#">CCTV央视推广</a><i></i></dd>
+								<dd><a href="#">AAA企业信用等</a></dd>
+								<dd><a href="#">级认证</a></dd>
+								<dd><a href="#">中国产品联盟</a><i></i></dd>
+							</dl>
+						</div>
+						<div class="schemeBox_listB">
+							<h2>企业网站建设</h2>
+							<p>04 <i></i></p>
+						</div>
+						<div class="schemeBox_listBorder"></div>	
+					</div>
+				</div>
+			</div>
+			<div class="section case" data-anchor="page4">
+				<h2>CASE APPRECLATION</h2>
+				<h6 class="clearfix"><i>-</i>我们客户的经典案例<i>-</i></h6>
+				<div class="caseBox clearfix">
+					<div class="caseBox_list ">
+						<img src="img/section4/section3_01.jpg"/>
+						<ul class="caseBox_listTxt">
+							<li>网站设计搜索引擎优化</li>
+							<li><h5>信融科技网络科技有限公司</h5></li>
+							<li>中小企业，温馨，居家风格</li>
+						</ul>
+						<div class="caseBox_listHover">
+							<img src="img/section4/section4_hover.png"/>
+						</div>
+					</div>
+					<div class="caseBox_list ">
+						<img src="img/section4/section3_01.jpg"/>
+						<ul class="caseBox_listTxt">
+							<li>网站设计搜索引擎优化</li>
+							<li><h5>信融科技网络科技有限公司</h5></li>
+							<li>中小企业，温馨，居家风格</li>
+						</ul>
+						<div class="caseBox_listHover">
+							<img src="img/section4/section4_hover.png"/>
+						</div>
+					</div>
+					<div class="caseBox_list ">
+						<img src="img/section4/section3_01.jpg"/>
+						<ul class="caseBox_listTxt">
+							<li>网站设计搜索引擎优化</li>
+							<li><h5>信融科技网络科技有限公司</h5></li>
+							<li>中小企业，温馨，居家风格</li>
+						</ul>
+						<div class="caseBox_listHover">
+							<img src="img/section4/section4_hover.png"/>
+						</div>
+					</div>
+				</div>
+				<div class="caseALL">
+					<a href="#">更多精彩案例</a>
+					<img src="img/section4/section4_jian.png"/>
+				</div>
+			</div>
+			<div class="section AboutUs" data-anchor="page5">
+				<h2>关于我们</h2>
+				<h6>一站式企业营销服务公司</h6>
+				<p></p>
+				<div class="AboutUs_txt">
+					<p> 中工信融(北京)信息技术有限公司在北京设立企业电子商务研发中心，重点研究企业电子商务解决方案和移动电子商务解决方案，推出拥有自主知识产权的"云商宝网络营销运营系统"、"微商宝微信营销运营系统"和"行业网站代运营系统"，成为企业高效开展电子商务的首选平台。</p>
+					<p>以北京、上海、天津、保定、石家庄、沧州、沈阳、大连、长春、西安、济南、青岛、烟台、唐山、郑州、宁波、厦门、金华、南京、苏州、成都、昆明等22个主要城市为中心，建立了覆盖全国近百个城市的全国性服务网络。</p>
+				</div>
+				<div class="AboutUs_bottom">
+					<ul class="clearfix">
+						<li>全国<span class="AboutUs_number1">30 </span><i>+</i>分公司</li>
+						<li>上<span class="AboutUs_number2">1000</span><i>+</i>企业家选择</li>
+						<li>团队<span class="AboutUs_number3">300</span><i>+</i>整合营销服务</li>
+					</ul>
+				</div>
+				<div class="caseALL">
+					<a href="#">更多精彩案例</a>
+					<img src="img/section4/section4_jian.png"/>
+				</div>
+			</div>
+			<div class="section KnowAboutUs" data-anchor="page6">
+				<div class="KnowAboutUs_box clearfix">
+					<div class="KnowAboutUs_left">
+						<img src="img/section6/section6_logo.jpg"/>
+						<p>专注于一站式企业营销服务</p>
+						<img src="img/section6/section6_er.jpg"/>
+					</div>
+					<div class="KnowAboutUs_right">
+						<dl>
+							<dt>信融科技网络科技有限公司</dt>
+							<dd>
+								<img src="img/section6/section6_map.jpg"/>北京总部地址：
+								<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;北京市朝阳区八里庄北里石佛营路保利东郡A座
+							</dd>
+							<dd><img src="img/section6/section6_tel.jpg"/>：40000-99990</dd>
+							<dd><img src="img/section6/section6_href.jpg"/>网址：WWW.WAYBOO.COM</dd>
+							<dd><img src="img/section6/section6_xin.jpg"/>E-mail：wayboo@163.con</dd>							
+						</dl>
+						<ul>
+							<li>京ICP备 13035649号-2     全国免费咨询电话：40000-99990</li>
+							<li>24小时服务热线：17736177850  ,  13611276790  ,  15116988656</li>
+							<li>邮箱：wayboo@163.com    QQ：1181998556,    2327180191 ,   2111245076</li>
+							<li>版权所有：信融科技网络科技有限公司</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section_list">
+			<ul id="menu">
+				<li class="section_listActive page1"><a href="#page1"  class="section_listActive"></a></li>
+				<li class="page2"><a href="#page2"></a></li>
+				<li class="page3"><a href="#page3"></a></li>
+				<li class="page4"><a href="#page4"></a></li>
+				<li class="page5"><a href="#page5"></a></li>
+				<li class="page6"><a href="#page6"></a></li>
+			</ul>
+		</div>
+		<div class="alterBOX">
+			<ul>
+				<li><img src="img/alert/images/alter_t1.png"/>免费服务热线</li>
+				<li><span>40000-99990</span></li>
+				<li><img src="img/alert/images/alter_t1.png"/>立即拨打免费电话</li>
+				<li><input type="tel" placeholder="请输入您的电话我们将立即联系您"/></li>
+			</ul>
+			<div class="alter_button">
+				<button><img src="img/alert/images/alter_t2.jpg"/>立即拨出</button>
+				<button><img src="img/alert/images/alter_t3.jpg"/>暂不需要</button>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="component/jquery/dist/js/jquery.fullPage.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+</html>

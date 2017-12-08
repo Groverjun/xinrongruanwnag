@@ -66,19 +66,26 @@ html, body {
     cursor: pointer;
     width: 0;
     height: 0;
-    border-style: solid;
+    border-style: none;
     margin-top: -38px;
 }
 .fp-controlArrow.fp-prev {
-    left: 15px;
-    width: 0;
-    border-width: 38.5px 34px 38.5px 0;
-    border-color: transparent #fff transparent transparent;
+    left: 0px;
+    width: 70px;
+    height: 70px;
+    background: rgba(0,0,0,0.1);
+    background-image: url(../../../../img/section1/banner_left.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 .fp-controlArrow.fp-next {
-    right: 15px;
-    border-width: 38.5px 0 38.5px 34px;
-    border-color: transparent transparent transparent #fff;
+    right: 0px;
+    width: 70px;
+    height: 70px;
+    background: rgba(0,0,0,0.1);
+    background-image: url(../../../../img/section1/banner_right.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 .fp-scrollable {
     overflow: scroll;
